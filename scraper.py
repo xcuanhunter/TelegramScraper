@@ -86,6 +86,8 @@ all_participants = client.get_participants(target_group, aggressive=True)
 
 print(gr+'[+] Saving in file ...')
 time.sleep(1)
+name = input(gr+"[+] Enter group name: "+re)
+
 with open("members.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
     writer.writerow(['username','user id', 'access hash','name','group', 'group id'])

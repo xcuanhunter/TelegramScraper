@@ -29,8 +29,6 @@ xid = input(gr+"[+] Enter API ID : "+re)
 cpass.set('cred', 'id', xid)
 xhash = input(gr+"[+] Enter Hash : "+re)
 cpass.set('cred', 'hash', xhash)
-xphone = input(gr+"[+] Enter Phone Number: "+re)
-cpass.set('cred', 'phone', xphone)
 with open('config.data', 'w') as setup:
 	cpass.write(setup)
 print(gr+"[+] Setup complete!")
